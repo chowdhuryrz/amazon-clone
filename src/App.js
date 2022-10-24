@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
+import ProductFeed from "./components/ProductFeed";
+import axios from "axios";
 
 function App() {
+  const URL = "https://fakestoreapi.com/products";
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    axios.get(URL).then((response) => {
+      setProducts(response.data);
+    });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-gray-100">
+      <Navbar />
+      <div className="max-w-screen-2xl mx-auto">
+        <Banner />
+        <ProductFeed products={products} />
+      </div>
     </div>
   );
 }
