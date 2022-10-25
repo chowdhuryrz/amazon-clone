@@ -10,7 +10,6 @@
         hover:outline
         hover:outline-1
         hover:border-white
-
     }
     .button {
         @apply p-2 
@@ -25,5 +24,10 @@
         focus:ring-2 
         focus:ring-yellow-500
         active:from-yellow-500
+    }
+    .underlines {
+        @apply
+        cursor-pointer
+        hover:underline
     }
 }

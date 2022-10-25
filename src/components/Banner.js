@@ -70,6 +70,27 @@ const Banner = () => {
             alt=""
           />
         </div>
+        <div>
+          <img
+            loading="lazy"
+            src="https://m.media-amazon.com/images/I/51so3XR2bLL._SX3000_.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            loading="lazy"
+            src="https://m.media-amazon.com/images/I/61tFozymKWL._SX3000_.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            loading="lazy"
+            src="https://m.media-amazon.com/images/I/61mPypEBMcL._SX3000_.jpg"
+            alt=""
+          />
+        </div>
       </Carousel>
     </div>
   );
