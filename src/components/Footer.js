@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className="hidden lg:inline-block lg:w-full h-[560px] bg-amazon_blue-light">
+      <div className="hidden lg:inline-block lg:w-full bg-amazon_blue-light">
         <div className="grid grid-cols-4 gap-24 text-white p-14 place-content-center mx-32">
           <div className="space-y-2">
             <h1 className="font-bold mb-4">Get to Know Us</h1>

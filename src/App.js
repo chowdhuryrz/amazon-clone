@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import axios from "axios";
 import Home from "./pages/Home";

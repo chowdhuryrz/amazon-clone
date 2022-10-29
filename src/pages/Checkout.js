@@ -6,9 +6,10 @@ import CheckoutProduct from "../components/CheckoutProduct";
 import { UserAuth } from "../context/AuthContext";
 
 const Checkout = () => {
-  const { user, logOut } = UserAuth();
+  const { user } = UserAuth();
   const items = useSelector(selectItems);
   const total = useSelector(selectTotal);
+
   return (
     <>
       <div className="bg-gray-100">
